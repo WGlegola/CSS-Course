@@ -1,0 +1,16 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+#product-overview {
+  background: red;
+}
+
+#product-overview h1 {
+  color: white;
+  font-family: sans-serif;
+}
+
+.section-title {
+  color: #2ddf5c;
+}
