@@ -6,10 +6,15 @@ body {
   font-family: "Courier New", Courier, monospace;
   margin: 0;
 }
+
 .main-header {
   width: 100%;
   background: #2ddf5c;
   padding: 8px 16px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
 }
 
 .main-header > div {
