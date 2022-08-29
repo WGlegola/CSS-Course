@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,900');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
 * {
   box-sizing: border-box;
 }
@@ -8,9 +12,10 @@ body {
 }
 
 main {
-  min-height: calc(100vh -3.5rem-8rem);
+  min-height: calc(100vh - 3.5rem - 8rem);
   margin-top: 3.5rem;
 }
+
 .backdrop {
   position: fixed;
   display: none;
@@ -63,10 +68,7 @@ main {
   color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
-  /* font-size: 1.5rem;
-   */
   height: 2.5rem;
-  /* height: 1.5rem; */
   /* width: 20px; */
   display: inline-block;
   vertical-align: middle;
@@ -79,9 +81,6 @@ main {
 
 .main-nav {
   display: none;
-  text-align: right;
-  width: calc(100% - 44px);
-  vertical-align: middle;
 }
 
 .main-nav__items {
@@ -126,6 +125,19 @@ main {
   border: none;
 }
 
+@media (min-width: 40rem) {
+  .toggle-button {
+    display: none;
+  }
+
+  .main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 44px);
+    vertical-align: middle;
+  }
+}
+
 .main-footer {
   background: black;
   padding: 2rem;
@@ -140,6 +152,7 @@ main {
 }
 
 .main-footer__link {
+  display: block;
   margin: 1rem 0;
 }
 
@@ -202,20 +215,20 @@ main {
   outline: none;
 }
 
+.button[disabled] {
+  cursor: not-allowed;
+  border: #a1a1a1;
+  background: #ccc;
+  color: #a1a1a1;
+} 
+
 .open {
-  display: block !important;
+    display: block !important;
 }
 
 @media (min-width: 40rem) {
-  .toggle-button {
-    display: none;
-  }
-  .main-nav {
-    display: inline-block;
-  }
-
   .main-footer__link {
-    margin: 0 1rem;
     display: inline-block;
+    margin: 0 1rem;
   }
 }
